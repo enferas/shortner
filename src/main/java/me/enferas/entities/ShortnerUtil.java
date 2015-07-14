@@ -69,4 +69,13 @@ public class ShortnerUtil {
         else
             return ls.get(0);
     }
+    
+    public Click addClick(Click click) {
+        try {
+            return this.persistence.merge(click);
+        } catch (PersistenceException ex) {
+            Logger.getLogger(ShortnerUtil.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
 }

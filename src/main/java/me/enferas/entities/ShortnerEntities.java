@@ -66,6 +66,7 @@ public class ShortnerEntities {
 
         cfg.addAnnotatedClass(ShortURL.class);
         cfg.addAnnotatedClass(RealURL.class);
+        cfg.addAnnotatedClass(Click.class);
 
         return cfg;
     }

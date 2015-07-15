@@ -8,12 +8,14 @@ package me.enferas.entities;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author aboud
  */
 @Entity(name = "click")
+@XmlRootElement
 public class Click implements Serializable{
     
     @Id

@@ -4,8 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity(name = "shorturl")
+@XmlRootElement
 public class ShortURL implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

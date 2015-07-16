@@ -22,7 +22,7 @@ public class ShortnerEntities {
      */
     
     public static void build_DB(){
-        File libraryFile = new File(System.getProperty("user.home") + File.separator + "shortnerdb" + File.separator);
+        File libraryFile = new File("/tmp" + File.separator + "shortnerdb" + File.separator);
         boolean setup = false;
         if (!libraryFile.exists()) {
             setup = true;

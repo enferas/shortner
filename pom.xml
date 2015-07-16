@@ -83,12 +83,6 @@
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>${xml}</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
         
         <plugins>
             <plugin>

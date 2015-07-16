@@ -142,8 +142,8 @@ public class DefaultController {
             } while (ShortnerUtil.getDefault().getShortUrl(surl) != null);
         }
 
-        model.addAttribute("LinkShortner", request.getLocalAddr() + request.getContextPath() + "/" + surl);
-        model.addAttribute("LinkDataShortner", request.getLocalAddr() + request.getContextPath() + "/" + surl + "/data");
+        model.addAttribute("LinkShortner", request.getServerName() + request.getContextPath() + "/" + surl);
+        model.addAttribute("LinkDataShortner", request.getServerName() + request.getContextPath() + "/" + surl + "/data");
         model.addAttribute("Error", "");
 
         RealURL realurl = new RealURL();
